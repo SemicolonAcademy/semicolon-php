@@ -1,5 +1,5 @@
 <?php
-	//run this program and see the error
+	//run this program and understand the error
 	class person {
         
 		public $name;
