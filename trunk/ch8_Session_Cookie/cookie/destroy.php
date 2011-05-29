@@ -3,15 +3,14 @@
 //When deleting a cookie you should assure that the
 //expiration date is in the past, to trigger the removal mechanism in your browse
  
- //set time to past 
-  $valid_till = 60*60 * 24 * 30 + time(); //1 month 
- $valid_till = time() - 5*60; 
+ //set time to past  
+ $valid_till = time() - 60*60; //an hour ago
  
  //set cookie to past to destroy it
- setcookie('last_visit', date("m-d-Y H:i:s"), $valid_till);
+ //setcookie('last_visit', date("m-d-Y H:i:s"), $valid_till);
  
- //setcookie('last_visit', NULL, -1); 
- //unset($_COOKIE['last_visit']); 
+ setcookie('last_visit', NULL, -1); 
+ unset($_COOKIE['last_visit']); 
  
  //check whether cookie unset or not 
  echo "Cookie Removed : ".$_COOKIE['last_visit'];
