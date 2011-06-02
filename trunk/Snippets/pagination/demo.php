@@ -33,7 +33,7 @@ adjacents: <input type="text" name="adjacents" size="2" value="<?=$adjacents;?>"
 </table>
 </form>
 <br>
-<p><b>View Results for page <?=$page;?> of <?=$tpages;?> (adjacent pages: <?=$adjacents;?>)</b></p>
+<p><b>View Results for page <?php echo $page;?> of <?php echo $tpages;?> (adjacent pages: <?php echo $adjacents;?>)</b></p>
 <p>paginate_one:</p>
 <?php
 include("pagination1.php");
