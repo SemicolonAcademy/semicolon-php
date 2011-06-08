@@ -1,5 +1,9 @@
 <?php
 /*
+
+//enable CURL in PHP ini
+Steps to use Curl:
+
 1.Initialise Curl
 
 2.Set URL we want to load
@@ -51,6 +55,7 @@
     echo "<pre>";
 	print $result;
 	*/
+	
 	/*
 	$curl = curl_init();
     curl_setopt($curl, CURLOPT_URL,"ftp://ftp.gnu.org");
@@ -79,7 +84,7 @@
 	
 	//The two new values, CURLOPT_POST and CURLOPT_POSTFIELDS, make our session prepare to send data over HTTP post and assign the data to send respectively
 	$curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL,"http://localhost/opensource/network/curl_post_test.php");
+    curl_setopt($curl, CURLOPT_URL,"http://localhost/curl_post_test.php");
     curl_setopt($curl, CURLOPT_POST, 1);// CURLOPT_POST just takes a 1 to enable to POST usage
     curl_setopt($curl, CURLOPT_POSTFIELDS, "Hello=World&Foo=Bar&Baz=Wombat");//needs a properly formatted data string to send.
 	//use 	urlencode($dataStr) here to avoid unnecessery spaces & special chareacters
