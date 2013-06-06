@@ -2,6 +2,7 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
+
     $('#link').click(function(e){
         
 		var username = $("#username").val();

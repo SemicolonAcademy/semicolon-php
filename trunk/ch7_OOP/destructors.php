@@ -31,5 +31,5 @@
     
 	//passing values to constructor while creating new object of the class programmer
     $daaju = new programmer("daaju");
-    echo $daaju->display_name();
+    $daaju->display_name();
 ?>

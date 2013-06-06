@@ -25,11 +25,22 @@
 
         public function __toString()
         {
-            return $this->name." ".$this->surname.", ".implode(" ",$this->phone_arr);
+            return $this->name." ".$this->surname." ".implode(" ",$this->phone_arr);
         }
     }
 
     $me = new Person;
-    echo $me->name("Nepali")->surname("Daaju")->phone("+977", "1 47 85058");
+    
+	/*
+	$me->name("Nepali");
+	$me->surname("Daaju");
+	$me->phone("+977", "1 47 85058");	
+	echo $me;
+	*/
+	
+	echo $me->name("Nepali")
+	        ->surname("Daaju")
+			->phone("+977", "1 47 85058");
+			
 
 ?>

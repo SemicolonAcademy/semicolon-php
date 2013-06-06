@@ -18,7 +18,9 @@ class parser {
     function parseTemplate($tags=array()){
 		  if(count($tags)>0){
 			foreach($tags as $tag=>$data){
-			  $data=(file_exists($data))?$this->parseFile($data):$data;
+			  
+			  $data=(file_exists($data))? $this->parseFile($data):$data;
+			  
 			  $this->output=str_replace('{'.$tag.'}',$data,$this->output);
 			  }
 		  }
