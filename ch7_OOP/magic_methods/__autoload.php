@@ -5,7 +5,7 @@
 	
 	function __autoload($class) {
         print "no existing class name: $class!\n";
-        //include "programmer.php";
+        include "myfile.php";
     }
 
     $daaju = new programmer;
